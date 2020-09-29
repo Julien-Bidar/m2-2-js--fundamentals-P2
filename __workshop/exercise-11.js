@@ -6,7 +6,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
-  // grades is an array of numbers
+  let sum = 0
+  let average = grades.map(element => {
+    sum += element ;
+  });
+  let result = sum/grades.length;
+  return Math.round(result);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

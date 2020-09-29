@@ -8,7 +8,16 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function allLong(list) {
-  // list is an array of strings
+  let filtered = list.filter(element => {
+    if(element.length > 4){
+      return element;
+    }
+  });
+  if(list.length === filtered.length){
+    return true;
+  } else {
+    return false;
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

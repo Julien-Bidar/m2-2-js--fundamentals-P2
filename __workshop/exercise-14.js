@@ -8,7 +8,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countChar(str, char) {
-  // str and char are both strings
+  let array = str.split('');
+  let newArray = array.filter(element => {
+    if(element === char) {
+      return element;
+    }
+  })
+  result = newArray.length
+  return result;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -6,7 +6,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countBs(str) {
-  // str is a string
+  let array = str.split("");
+  let newArray = array.filter(element => {
+    if (element === "B"){
+      return element
+    }
+  })
+  let result = newArray.length
+  return result;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

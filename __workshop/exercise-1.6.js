@@ -10,7 +10,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
+  let str = array.join(" ");
+  let newArray = []
+  for(i=0; i<array.length; i++){
+    if(array[i] !== string){
+      newArray.push(array[i]);
+    }
+  }
+  return newArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

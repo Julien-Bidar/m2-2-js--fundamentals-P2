@@ -16,7 +16,16 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  let fullNameArray = string.split(" ");
+  let arrayLength = fullNameArray.length;
+  let firstName = fullNameArray[0]
+  let lastName = fullNameArray[arrayLength-1]
+  if(arrayLength === 1){
+    return(firstName)
+  }else{
+    return `${firstName} ${lastName}`;
+  }
+  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

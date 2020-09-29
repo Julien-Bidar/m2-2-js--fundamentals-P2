@@ -8,7 +8,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeEvens(list) {
-  // list is an array of numbers
+let removedEven = list.filter(item => item % 2 === 1)
+return removedEven
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

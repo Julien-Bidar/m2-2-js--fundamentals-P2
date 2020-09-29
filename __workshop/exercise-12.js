@@ -13,7 +13,22 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  // grades is an array of numbers
+  let sum = 0
+  let average = grades.map(element => {
+    sum += element ;
+  });
+  let result = sum/grades.length;
+  if (result < 60) {
+    return "F";
+  } else if (result < 70){
+    return "D";
+  } else if (result < 80){
+    return "C";
+  } else if (result < 90){
+    return "B";
+  } else if (result <= 100){
+    return "A";
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

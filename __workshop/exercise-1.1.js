@@ -8,8 +8,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countNames(fullName) {
-  // complete the function
-  return fullName.split(" ");
+  fullNameArray = fullName.split(" ");
+  return fullNameArray.length; 
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

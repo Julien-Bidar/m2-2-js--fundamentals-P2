@@ -12,8 +12,20 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function decodeMessage(string, notCode) {
-  // complete the function
+function decodeMessage(string, notCode){
+  let codedArray = string.split(" ")
+  let decodedArray = [];
+  for(i=0; i<codedArray.length; i++){
+    let checkedItem = codedArray[i]
+    for(j=0; j<notCode.length; j++){
+      let checkingKey = notCode[j];
+      if(checkedItem.includes(checkingKey)) {
+        checkedItem = checkedItem.replace(checkingKey, "");
+      }        
+    }
+    decodedArray.push(checkedItem);
+  }
+  return decodedArray.join(" ")
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

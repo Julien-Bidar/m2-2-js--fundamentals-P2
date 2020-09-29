@@ -6,8 +6,13 @@
 //
 // Edit only the code between the lines (below)
 function getMax(num1, num2) {
-  // your code here...
+  if(num1<num2){
+    return num2;
+  } else {
+    return num1;
+  }
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

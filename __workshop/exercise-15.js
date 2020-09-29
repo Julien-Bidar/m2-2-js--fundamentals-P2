@@ -7,8 +7,14 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+let pushedArray = []
 function filterNonUnique(arr) {
-  // arr is an array of values of any type
+  arr.filter( element => {
+    if(arr.indexOf(element) === arr.lastIndexOf(element)){
+      pushedArray.push(element);
+    }
+  });
+  return pushedArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
